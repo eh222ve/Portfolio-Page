@@ -1,0 +1,252 @@
+/**
+ * Navbar CSS
+
+ */
+
+@import url(navbar.css);
+
+html{
+    overflow-y: scroll;
+}
+/**
+ * General elements
+ */
+body {
+    color: #333;
+    font-family: arial, sans-serif;
+    font-size: 1em;
+}
+
+/**
+ * Layout of the main page elements
+ */
+#wrapper {
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+html, body, #wrapper{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/**
+ * Layout for header
+ */
+#header {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 50px;
+    background-image: url('../img/header.jpg');
+    overflow: auto;
+    -webkit-box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    0px 20px 30px -10px rgba(0, 0, 0, 0.77);
+    box-shadow:         0px 20px 30px -10px rgba(0, 0, 0, 0.77);
+}
+
+#header img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.sitetitle {
+    display:block;
+    font-size: 48px;
+    color: #FFF;
+}
+
+.siteslogan {
+    display:block;
+    font-style: italic;
+    color: #f7f7f7;
+}
+
+
+/**
+ * Layout for main
+ */
+#main {
+    min-height: 20em;
+}
+#projects ul{
+    list-style-type: none;
+    padding: 0;
+}
+dd{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: .8em;
+}
+a{
+    color: #999;
+}
+a:hover{
+    color: #000;
+}
+
+article{
+    overflow: auto;
+}
+article.code:after{
+    clear:both;
+}
+article.code section{
+    width: 22%;
+    min-width: 160px;
+    float: left;
+    overflow: auto;
+}
+article.graphical section{
+    float: left;
+    width: 40%;
+    margin: 0 2.5%;
+    overflow: auto;
+}
+
+article.graphical section iframe, article.graphical section img{
+    width: 100%;
+}
+article.graphical section iframe{
+    height: 300px;
+}
+#videoheader{
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    text-align: center;
+    overflow: auto;
+}
+
+article.graphical section h2{
+    display: inline-block;
+
+}
+#threeDHeader{
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    text-align: center;
+    overflow: auto;
+}
+
+#videoheader:hover{
+    cursor: pointer;
+}
+
+#threeDHeader:hover{
+    cursor: pointer;
+}
+article.graphical section span{
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+img.github{
+    max-width: 20px;
+}
+
+div#contact{
+    width: 400px;
+    margin: 0 auto;
+}
+
+span.contact-label{
+    display: inline-block;
+    min-width: 100px;
+    font-weight: bold;
+}
+
+/* figure & figcaption
+--------------------------------------------------------
+
+*/
+figure {
+    padding:4px;
+    margin:1em;
+    text-align:center;
+    width: 30%;
+    float: right;
+}
+figure img{
+    max-width: 100%;
+    -webkit-box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    0px 20px 30px -10px rgba(0, 0, 0, 0.77);
+    box-shadow:         0px 20px 30px -10px rgba(0, 0, 0, 0.77);
+}
+figcaption {font-style:italic;font-size:smaller;padding-left:1em;}
+
+
+/**
+ * Layout for footer
+ */
+#footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
+.sitefooter {
+    color: #666;
+    text-align: center;
+    margin-left: 42%;
+}
+
+#main footer#page{
+    float: right;
+    clear: both;
+    font-size: 1.2em;
+}
+
+/**
+ * Blogpost
+ */
+.blogpost{
+
+}
+
+.blogpost header a{
+    text-decoration: none;
+    color: #515151;
+}
+
+.blogpost header a:hover{
+    color: #8E8E8E;
+}
+
+.blogpost footer{
+    text-align: right;
+}
+
+/**
+ * Layout for forms
+ */
+
+form fieldset span{
+    display: block;
+}
+
+form fieldset input[type=text], form fieldset textarea, form fieldset select{
+    width: 400px;
+    padding: 4px;
+    font-size: 1.1em;
+}
